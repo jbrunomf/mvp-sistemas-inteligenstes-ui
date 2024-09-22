@@ -71,7 +71,6 @@ if st.button("Send"):
     # Mostrar resposta da API
     if response.status_code == 200:
         st.success("Data sent successfully!")
-        st.json(response.json())
         resp = response.json()["outcome"]
         if resp == 0:
             st.success("The informed patient was not classified as a potential carrier of heart disease")
