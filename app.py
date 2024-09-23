@@ -14,7 +14,7 @@ selected2 = option_menu(None, ["Home", "Patients"],
 selected2
 
 # Requests
-api_url = "http://localhost:5000/patient"
+api_url = "http://127.0.0.1:5000/patient"
 
 def fetch_data_from_backend(url):
     try:
